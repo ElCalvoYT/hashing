@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traductor ASCII a Binario</title>
+    <script src="https://kit.fontawesome.com/59190778bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Hashing</title>
 </head>
 <body>
+    <div class="cover"></div>
     <header>
-        <h1>Traductor ASCII a Binario</h1>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Updates</a></li>
+                <a href="http://www.xinitry.com" id="button" target="_blank">Visit Xinitry</a>
+            </ul>
+        </nav>
     </header>
     <main>
-        <textarea id="input-text" placeholder="Introduce el texto ASCII"></textarea>
-        <button id="translate-button">Traducir</button>
-        <textarea id="output-binary" placeholder="Texto binario traducido" onfocus="selectContent(this)"></textarea>
+        <section class="info">
+            <h1>HASHING <br>the best place to <span>hash</span> your <span>information</span></h1>
+            <button id="try-it-out">Try it out</button>
+        </section>
+        <section class="hasher">
+            <textarea id="textarea" cols="30" rows="10" placeholder="Type in your text here" onfocus="selectContent(this)"></textarea>
+
+            <div class="buttons">
+                <button id="hash-button">
+                    HASH
+                    <i class="fa-solid fa-lock-open lockOpen"></i>
+                    <i class="fa-solid fa-lock lockClose"></i>
+                </button>
+                <button id="dehash-button">
+                    DEHASH
+                    <i class="fa-solid fa-lock-open lockClose"></i>
+                    <i class="fa-solid fa-lock lockOpen"></i>
+                </button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@xinitry" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/xinitry" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.xinitry.com" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        </div>
+        <div class="credits">
+            <p>&copy; 2023 All rights reserved, Made by <a href="http://www.xinitry.com" target="_blank">Xinitry.com</a></p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
